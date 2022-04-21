@@ -1,0 +1,181 @@
+.second {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+
+  .second__view {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    .view--category {
+      .category-photography {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 33px;
+        /* identical to box height */
+
+        color: #000000;
+      }
+      .category-slash {
+        font-family: "Archivo";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 37px;
+        /* identical to box height */
+        width: 10px;
+        height: 37px;
+
+        color: #000000;
+      }
+      .category-premium {
+        font-family: "Archivo";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 33px;
+        /* identical to box height */
+        width: 222px;
+        height: 33px;
+
+        color: #9b9b9b;
+      }
+    }
+    .second__sort {
+      display: flex;
+      width: 20%;
+      align-items: center;
+      justify-content: space-evenly;
+
+      justify-self: flex-end;
+      .sort-svg {
+        height: 14.500652313232422px;
+        width: 14.999982833862305px;
+        border-radius: 0px;
+      }
+      .sort-by {
+        font-family: "Archivo";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 24px;
+        /* identical to box height */
+
+        color: #9b9b9b;
+      }
+      .sort-price {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 24px;
+        /* identical to box height */
+
+        color: #000000;
+      }
+      .sort-dropdown {
+        width: 16px;
+        height: 8px;
+      }
+      .sort-mobile.dropdown {
+        display: none;
+      }
+    }
+  }
+  .second__categories {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    .category-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 65%;
+    }
+  }
+  .second__footer {
+    display: flex;
+    align-self: center;
+    margin-top: 90px;
+    width: 15%;
+    justify-content: space-between;
+    cursor: pointer;
+    .footer-arrow {
+      width: 30px;
+      height: 32px;
+    }
+    .footer-number {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 29px;
+      line-height: 32px;
+      text-align: right;
+
+      color: #b4b4b4;
+    }
+    .footer-number:active {
+      color: black;
+    }
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .second {
+    width: 90%;
+    margin: 50px auto 0 auto;
+    .second__categories {
+      flex-direction: row;
+      .category-items {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+      }
+    
+    }
+    .second__view {
+     
+      align-items: center;
+      .view--category {
+        align-self: flex-end;
+        margin: 0 auto;
+        width: 262px;
+        height: 37px;
+        .category-photography,
+        .category-premium,
+        .category-slash {
+          font-size: 18px;
+          line-height: 20px;
+        }
+        .category-slash{
+          font-size: 24px;
+        }
+
+      }
+      .second__sort {
+       
+        .sort-dropdown{
+          display: none;
+        }
+        .sort-price{
+          display: none;
+        }
+        .sort-by{
+          display: none;
+        }
+        .sort-svg{
+          display: none;
+        }
+        .sort-mobile-dropdown{
+          display: block;
+          width: 29px;
+          height: 29px;
+        }
+      }
+    }
+    .second__footer{
+      width: 56%;
+    }
+  }
+}
