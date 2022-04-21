@@ -2,7 +2,8 @@ import './product.scss';
 import Button from '../button/button';
 
 
-const Product=({name,category,price,image,text})=>{
+const Product=({data})=>{
+  const {name,category,price,image,text}=data
 
   return(
     <div className='product'>{

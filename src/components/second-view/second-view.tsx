@@ -34,8 +34,8 @@ const SecondView = () => {
        
         <div className="category-items">
           {
-            Datas.map( ({id, ...otherProps})=>
-              <Product key={id} {...otherProps}/>)
+            Datas.map( (data)=>
+              <Product key={data.id} data={data}/>)
           }
 
 
