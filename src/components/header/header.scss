@@ -18,6 +18,7 @@
     .cart {
       width: 54px;
       height: 54px;
+      cursor: pointer;
     }
   }
   .line {
@@ -28,12 +29,12 @@
 }
 @media screen and (max-width:414px){
 .header{
-   width: 414px;
+   width: 100%;
    .header__logos{
      width: 90%;
    }
   .line{
-    width: 100%;
+    width: 400px;
   }
 }
   

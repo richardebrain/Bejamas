@@ -79,7 +79,7 @@
         width: 16px;
         height: 8px;
       }
-      .sort-mobile.dropdown {
+      .sort-mobile-dropdown {
         display: none;
       }
     }
@@ -123,19 +123,18 @@
 
 @media screen and (max-width: 414px) {
   .second {
-    width: 90%;
+    width: 380px;
     margin: 50px auto 0 auto;
     .second__categories {
       flex-direction: row;
       .category-items {
         flex-direction: column;
-        width: 100%;
+        width: 370px;
         align-items: center;
       }
-    
     }
     .second__view {
-     
+      width: 370px;
       align-items: center;
       .view--category {
         align-self: flex-end;
@@ -148,33 +147,31 @@
           font-size: 18px;
           line-height: 20px;
         }
-        .category-slash{
+        .category-slash {
           font-size: 24px;
         }
-
       }
       .second__sort {
-       
-        .sort-dropdown{
+        .sort-dropdown {
           display: none;
         }
-        .sort-price{
+        .sort-price {
           display: none;
         }
-        .sort-by{
+        .sort-by {
           display: none;
         }
-        .sort-svg{
+        .sort-svg {
           display: none;
         }
-        .sort-mobile-dropdown{
+        .sort-mobile-dropdown {
           display: block;
           width: 29px;
           height: 29px;
         }
       }
     }
-    .second__footer{
+    .second__footer {
       width: 56%;
     }
   }

@@ -7,8 +7,20 @@ import Product from "../products/products";
 import {ReactComponent as LeftArrow} from '../../assets/left-arrow.svg'
 import {ReactComponent as RightArrow} from '../../assets/right-arrow.svg'
 import {ReactComponent as SortIconMobile} from '../../assets/sort-icon-mobile.svg'
+import { useState } from "react";
+import useWindowDimensions from "../window";
+import CheckboxAreaMobile from "../checkbox-area-mobile/checkbox-area.mobile";
 
 const SecondView = () => {
+  const [hidden,setHidden]= useState(true)
+  const handleclick=(e)=>{
+    e.preventDefault();
+   setHidden(!hidden) 
+     
+  }
+ const {height,width} =useWindowDimensions();
+ console.log(height,width)
+ 
   return (
     <div className="second">
       <div className="second__view view--header">
@@ -24,13 +36,14 @@ const SecondView = () => {
           
             <span className="sort-price">Price</span>
             <Dropdown className="sort-dropdown" />
-            <SortIconMobile className="sort-mobile-dropdown"/>
+            <SortIconMobile className="sort-mobile-dropdown" onClick={handleclick}/>
         
         </div>
       </div>
 
       <div className="second__categories">
         <CheckboxArea/>
+       {hidden ? null : <CheckboxAreaMobile handleclick={handleclick}/>}
        
         <div className="category-items">
           {
@@ -41,7 +54,7 @@ const SecondView = () => {
 
         </div>
       </div>
-
+       
       <div className="second__footer footer">
         <LeftArrow className="footer-arrow"/>
         <span className="footer-number">1</span>

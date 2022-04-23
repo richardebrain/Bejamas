@@ -3,10 +3,12 @@ import Button from "../button/button";
 import { ReactComponent as Hr } from "../../assets/horizontal.svg";
 import { ReactComponent as Delete } from "../../assets/delete-icon.svg";
 
-const CartDropdown = () => {
+
+const CartDropdown = ({handleClick}) => {
+  
   return (
     <div className="dropdown">
-      <Delete className="del"/>
+      <Delete className="del" onClick={handleClick}/>
       <div className="item">
         <div className="item-details">
           <span className="name">Samurai King Resting</span>
