@@ -55,6 +55,7 @@
         height: 14.500652313232422px;
         width: 14.999982833862305px;
         border-radius: 0px;
+        cursor: pointer;
       }
       .sort-by {
         font-family: "Archivo";
@@ -78,6 +79,7 @@
       .sort-dropdown {
         width: 16px;
         height: 8px;
+        cursor: pointer;
       }
       .sort-mobile-dropdown {
         display: none;
@@ -127,10 +129,12 @@
     margin: 50px auto 0 auto;
     .second__categories {
       flex-direction: row;
+      margin: 50px auto;
       .category-items {
         flex-direction: column;
-        width: 370px;
+        width: 100%;
         align-items: center;
+     
       }
     }
     .second__view {
